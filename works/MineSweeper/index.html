@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MineSweeper On Browser</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/MineSweeper.css">
+	<link rel="stylesheet" type="text/css" href="css/MineSweeper-responsive.css">
+	<link rel="stylesheet" href="../../css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+		<h1>MineSweeper On Browser</h1>
+	</header>
+
+	<section>
+		<div class="game-detail">
+			<div class="detail-head" id="detail-btn">
+				<h3>ルールはこちら</h3>
+				<span class="caption-icon"><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+				<span class="caption-icon caption-close"><i class="fa fa-caret-up" aria-hidden="true"></i></span>
+			</div>
+			<div class="detail-caption" id="detail-p">
+				<p>盤面をクリックしながら地雷(mine)を掃除する(sweep)ゲームです。</p>
+				<p>といっても<b>地雷のあるマスを開けたらゲームオーバー</b>です。<b>地雷を避けてそれ以外全てのマスを開放すればクリア</b>となります。</p>
+				<p>地雷の置かれていないマスを開けると、隣接する周囲8マスのいずれかに地雷があればその個数が表示され、周囲に地雷がないマスは自動的に開放されます。
+				</p>
+				<div class="img-c">
+					<img src="images/cell.png" alt="">
+					<p class="small-p">※例えばこの状況なら中央の周囲8マスに合計3個地雷があるので中央には「3」と表示される。</p>
+				</div>
+				
+				<p>地雷と思われるマスにはフラグ(旗)を置くことができます。フラグはフラグ設置ボタンをONにした状態でマスをクリックしてください。</p>
+				<p>このゲームでは盤面が8×8,地雷は8個固定となっています。Enjoy！</p>
+			</div>
+		</div>	
+	</section>
+
+	<main>
+		<div class="wrapper">
+			<div class="modal-wrapper" id="mes-modal">
+				<div class="modal">
+					<div class="close-modal" id="close-modal">
+						<i class="fa fa-times" aria-hidden="true"></i>
+					</div>
+					<div class="modal-body">
+						<h3 id="modal-title">
+							結果
+						</h3>
+						<p id="modal-sub">コメント</p>
+						<ul id="img-section" class="img-section">
+							<li class="result-img"><img src="images/win.jpg" alt=""></li>
+							<li class="result-img"><img src="images/lose.jpg" alt=""></li>
+						</ul>
+						<div class="share-btn-area" id="share">
+							<a class="share-btn" href="https://twitter.com/share?url=http://maple-tree.moo.jp/works/MineSweeper/index.html&text= 地雷を踏んでしまった！">Share<span class="fa fa-twitter"></span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="message" id="mes">
+					<p>ここにメッセージ</p>
+			</div>
+			<div class="clearfix"></div>
+			<div id="board">
+				<!-- ここにテーブルが書き込まれる -->
+			</div>
+			<div class="toggleFlag">
+				<label>
+					<input class="check-input" id="btnFlag" name="checkbox" type="checkbox">
+					<span class="checkbox-parts">フラグ設置</span>
+				</label>
+			</div>
+			<div class="btn" id="btnStart">
+				<a href="#">Start</a>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<div class="copyright-box">
+			<p class="copyright">Copyright&copy; 2017 MapleMomiji.All Rights Reserved.</p>
+		</div>
+	</footer>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/MineSweeper.js"></script>
+</body>
+</html>

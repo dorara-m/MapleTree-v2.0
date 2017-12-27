@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Janken!</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header>
+		<h2 class="head-title">Let's Janken!</h2>
+		<p>コンピュータとジャンケンしよう</p>
+	</header>
+		
+	<div id="pageBody">
+		<form name="f" method="get">
+			<h2>あなたの手を選んでください</h2>
+			<ul>
+				<li><input class="btn" type="button" name="myHand" value="グー" onclick="janken(0)"></li>
+				<li><input class="btn" type="button" name="myHand" value="チョキ" onclick="janken(1)"></li>
+				<li><input class="btn" type="button" name="myHand" value="パー" onclick="janken(2)"></li>
+			</ul>
+			<div id="result-area">
+				<img class="result-image" id="click-g" src="images/goo.png">
+				<img class="result-image" id="click-c" src="images/tyoki.png">
+				<img class="result-image" id="click-p" src="images/pa.png">
+			</div>
+		</form>
+		<div id="result-text"></div>
+	</div>
+
+	<footer>
+		<div class="links">
+			<h3>@link</h3>
+			<p>イラスト：<a href="http://www.sozai-library.com/" title="">素材 Library.com</a></p>
+		</div>
+		<p class="copyright">Copyright&copy; 2017 MapleMomiji.All Rights Reserved.</p>
+	</footer>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/script01.js"></script>
+</body>
+
+</html>

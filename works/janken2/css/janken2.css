@@ -1,0 +1,257 @@
+/*共通の要素*/
+*{
+	margin: 0;
+	padding: 0;
+	color: inherit;
+	font-size: inherit;
+	font-family: serif;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+/*ヘッダー*/
+header {
+	height:100px;
+	/*border: 1px solid #999;*/
+	text-align: center;
+	/*background-color:#eee;*/
+	margin-bottom: 20px;
+}
+
+.page-title {
+	font-size: 42px;
+	padding-top: 20px;
+	color: #555;
+}
+
+
+/*ここからmain*/
+
+main {
+	/*border: 1px solid #999;*/
+	text-align: center;
+	background-color: #eee;
+	padding-bottom: 50px;
+	position: relative;
+}
+
+.wrapper {
+	margin: 0 auto;
+	/*border: 1px solid #999;*/
+	width: 70%;
+	/*position: relative;*/
+}
+
+.wrapper h2 {
+	/*border: 1px solid #999;*/
+	font-size: 25px;
+	margin: 20px;
+}
+
+/*ここからじゃんけんボタン*/
+.myhand {
+	float: left;
+	width: 33.3%;
+	/*box-sizing: border-box;
+	border: 1px solid #999;*/
+}
+
+.myhand a {
+	/*display: inline-block;
+	border: 1px solid #999;
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	cursor: pointer;
+	background-color:rgba(0,0,0,0.2);*/
+}
+
+.myhand img {
+	width: 100px;
+	height:100px;
+	overflow: hidden;
+	border: 1px solid #999;
+	border-radius: 50px;
+	cursor: pointer;
+	box-shadow: 0 0 5px 0 #444;
+}
+
+.myhand img:hover {
+	box-shadow: none;
+	/*border: 1px solid #999;*/
+	
+}	
+
+.clearfix {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+
+/*ここからモーダル*/
+
+.modal-wrapper {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.6);
+	z-index: 100;
+	display: none;
+}
+
+.modal {
+	position: absolute;
+	top:0;
+	left:0;
+	right: 0;
+	bottom: 0;
+	background-color: #eee;
+	padding: 20px 0 40px;
+	width:450px;
+	height:380px;
+	border-radius: 10px;
+	margin: auto;
+	font-size: 18px;
+}
+
+/*.fa-times {
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	color: #444;
+	cursor: pointer;
+}*/
+
+.result-screen {
+	width: 100%;
+}
+
+.result-screen h2 {
+	margin: 10px 0 20px;
+	font-size: 30px;
+	color: #D21212;
+}
+
+.img-section {
+	width: 300px;
+	height:200px;
+	margin: 0 auto;
+}
+
+.img-section img {
+	width: 300px;
+	height:200px;
+}
+
+.result-img {
+	display: none;
+}
+
+.active {
+	display: block;
+}
+
+.result-screen .button-section {
+	margin-top: 25px;
+}
+
+.result-screen .button-section a {
+	display: inline-block;
+	padding: 4px 8px;
+	border-radius: 5px;
+	/*border: 1px solid #999;*/
+	box-shadow: 0 0 4px 0 #222;
+	line-height: 1.5;
+	color: #fff;
+	opacity: 0.7;
+}
+
+.result-screen .button-section #share {
+	display: inline-block;
+}
+
+.result-screen .button-section #share-button {
+	margin-right: 20px;
+	background-color: #00aced;
+}
+
+.result-screen .button-section #share-button .fa {
+	margin-left: 6px;
+}
+
+.result-screen .button-section .retry-button {
+	background-color: #17AE83;
+	letter-spacing: 1px;
+}
+
+.result-screen .button-section a:hover {
+	box-shadow: none;
+	opacity: 1.0;
+}
+
+
+/*ここまでモーダル*/
+
+
+/*ここからフッター*/
+
+footer {
+	height: 130px;
+	margin-top: 50px;
+	/*background-color: #ddd;*/
+	position: relative;
+	color: #666;
+}
+
+footer .link-tree {
+	padding-top: 40px;
+}
+
+footer .link-tree ul {
+	padding-left:30px;
+}
+
+footer .link-tree ul:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+footer .link-tree li {
+	float: left;
+	padding-right: 20px;
+}
+
+footer .link-tree li:nth-of-type(odd){
+	padding-right: 13px;
+}
+
+footer .link-tree li a {
+	color: #999966;
+}
+
+footer .link-tree li a:hover {
+	color:#996600;
+}
+
+footer .copyright-box {
+	position: absolute;
+	right: 30px;
+	top:40px;
+	text-align: right;
+}
+
+footer .copyright {
+	font-size: 14px;
+}
+/*ここまでフッター

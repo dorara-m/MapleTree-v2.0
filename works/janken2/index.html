@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Janken Pon!</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/janken2.css">
+	<link rel="stylesheet" href="css/janken2-responsive.css">
+	<link rel="stylesheet" href="../../css/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+		<h1 class="page-title">Janken Pon!</h1>
+	</header>
+
+	<main>
+		<div class="wrapper">
+			<h2>Choose your hand</h2>
+			<ul>
+				<li class="myhand">
+					<a><img src="images/goo.png" alt=""></a>
+				</li>
+				<li class="myhand">
+					<a><img src="images/tyoki.png" alt=""></a>
+				</li>
+				<li class="myhand">
+					<a><img src="images/pa.png" alt=""></a>
+				</li>
+			</ul>
+			<div class="clearfix"></div>
+			<div class="modal-wrapper" id="result-modal">
+				<div class="modal">
+					<!-- <div id="close-modal">
+						<i class="fa fa-times" aria-hidden="true"></i>
+					</div> -->
+					<div class="result-screen">
+						<h3 id="result-text1">コンピュータの手</h3>
+						<h2 id="result-text2">結果</h2>
+						<div class="img-section" id="img-section">
+							<ul>
+								<li class="result-img"><img src="images/draw.jpg"></li>
+								<li class="result-img"><img src="images/win.jpg"></li>
+								<li class="result-img"><img src="images/lose.jpg"></li>
+							</ul>
+						</div>
+						<div class="button-section">
+							<div id="share"><a id="share-button" href="https://twitter.com/share?url=http://maple-tree.moo.jp/works/janken2/index.html&text= じゃんけん！">Share on Twitter<span class="fa fa-twitter"></span></a></div>
+							<a href="#" class="retry-button" id="close-modal">Retry or Quit</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+		
+	<footer>
+		<div class="copyright-box">
+			<p class="copyright">Copyright&copy; 2017 MapleMomiji.All Rights Reserved.</p>
+		</div>
+
+	</footer>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/janken2.js"></script>
+</body>
+</html>

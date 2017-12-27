@@ -1,0 +1,67 @@
+/*タブレット用デザイン*/
+@media all and (max-width: 960px) {
+	/*ブラウザ版と共通*/
+
+}
+
+/*スマホ用デザイン*/
+@media all and (max-width: 600px) {
+
+	/*detailの文字を小さく*/
+	.game-detail {
+		width: 80%;
+	}
+
+	.detail-head {
+		font-size: 15px;
+	}
+
+	.detail-head .caption-icon {
+		font-size: 20px;
+	}
+
+	.detail-caption {
+		font-size: 13px;
+	}
+
+	.detail-caption .small-p {
+		font-size: 10px;
+	}
+
+	/*modalのサイズを小さく*/
+	.modal {
+		width: 90%;
+		height: 340px;
+	}
+
+	.modal .close-modal {
+		font-size: 25px;
+	}
+
+	.modal .modal-body h3 {
+		font-size: 25px;
+	}
+
+	.modal .modal-body p {
+		font-size: 14px;
+	}
+
+	.img-section {
+		width:240px;
+		height: 160px;
+	}
+
+	.img-section img {
+		width:240px;
+		height: 160px;
+	}
+
+	/*footerの文字も小さく*/
+	footer {
+		font-size: 14px;
+	}
+
+	footer .copyright{
+		font-size: 12px;
+	}
+}

@@ -1,0 +1,56 @@
+/*タブレット用デザイン*/
+@media all and (max-width: 960px) {
+	/*ブラウザ版と共通*/
+
+}
+
+/*スマホ用デザイン*/
+@media all and (max-width: 600px) {
+	/*手を縦並びに*/
+	.myhand {
+		width: 100%;
+		margin-bottom: 40px;
+	}
+
+	.myhand:nth-of-type(1) {
+		margin-top: 20px;
+	}
+
+	/*モーダルを小さく*/
+	.modal {
+		width: 90%;
+		height: 340px;
+	}
+
+	.img-section {
+		width:240px;
+		height: 160px;
+	}
+
+	.img-section img {
+		width:240px;
+		height: 160px;
+	}
+
+	.result-screen .button-section a {
+		font-size: 14px;
+	}
+
+	/*footer中央寄せ*/
+	footer {
+		font-size: 14px;
+	}
+
+	footer .link-tree {
+		padding: 20px 0;
+		text-align: center;
+	}
+
+	footer .copyright-box{
+		font-size: 12px;
+		text-align:center;
+		position: static;
+		padding-top:20px;
+		border-top: 1px solid #ccc; 
+	}
+}

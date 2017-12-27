@@ -1,0 +1,364 @@
+* {
+	margin: 0;
+	padding: 0;
+	color: inherit;
+	font-size: inherit;
+	list-style: none;
+	text-decoration: none;
+}
+
+/*----ここからheader----*/
+header {
+	/*height: 100px;*/
+	text-align: center;
+	background-image: url(../images/danger.jpg);
+	background-size: cover;
+}
+
+header h1 {
+	font-family: serif;
+	font-size: 32px;
+	text-shadow: 1px 1px 1px #444;
+	color: #fff;
+	padding:45px 0;
+}
+
+
+/*---ここからルール説明---*/
+.game-detail {
+	width: 60%;
+	margin: 10px auto;
+}
+
+.detail-head {
+	/*margin: 25px auto 25px;*/
+	font-size: 17px;
+	padding: 3px 5px;
+	color: #666;
+	/*display: inline-block;*/
+	border: 1px solid #666;
+	border-radius: 25px;
+	position: relative;
+	cursor: pointer;
+}
+
+.detail-head:hover {
+	background-color: #B54A1D;
+	border-color: #B54A1D;
+	color: #fff;
+}
+
+.detail-head h3 {
+	text-align: center;
+	font-weight: normal;
+}
+
+.detail-head .caption-icon {
+	position: absolute;
+	display: block;
+	top: -3px;
+	right: 20px;
+	font-size: 25px;
+	/*border: 1px solid #666;*/
+}
+
+.detail-head .caption-close {
+	display: none;
+}
+
+.caption-is-open {
+	background-color: #B54A1D;
+	border-color: #B54A1D;
+	color: #fff;
+}
+
+.detail-caption {
+	padding: 5px 2px;
+	border-radius: 10px;
+	background-color: #edd;
+	font-size: 15px;
+	display: none;
+}
+
+.detail-caption p {
+	text-align: left;
+	margin-top: 5px;
+}
+
+.detail-caption p:nth-of-type(1) {
+	margin-top: 0;
+}
+
+.detail-caption .img-c {
+	text-align: center;
+	margin: 15px 0 ;
+}
+
+.detail-caption .small-p {
+	font-size: 12px;
+	margin-top: 2px;
+	text-align: center;
+}
+/*----ここまでdetail---*/
+
+
+/*---ここからmain----*/
+
+main {
+	/*border: 1px solid #444;*/
+	background-color: #eee;
+}
+
+.wrapper {
+	width: 80%;
+	/*border: 1px solid #444;*/
+	margin: 0 auto;
+	text-align: center;
+}
+
+/*ここからモーダル*/
+.modal-wrapper {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.6);
+	z-index: 100;
+}
+
+.modal {
+	position: absolute;
+	top:100px;
+	left:0%;
+	right: 0%;
+	bottom: 0%;
+	background-color: #eee;
+	width:450px;
+	height:400px;
+	border-radius: 10px;
+	margin: 0 auto;
+	font-size: 18px;
+}
+
+.modal .close-modal {
+	font-size: 30px;
+	position: relative;
+}
+
+.modal .close-modal .fa {
+	position: absolute;
+	top: 12px;
+	right: 20px;
+	color: #444;
+	cursor: pointer;
+}
+
+.modal .modal-body h3 {	
+	font-size: 34px;
+	letter-spacing: 2px;
+	margin: 10px 0 5px;
+}
+
+.modal .modal-body p {
+	color: #666;
+	margin-bottom: 10px;
+}
+
+.img-section {
+	width: 300px;
+	height:200px;
+	margin: 0 auto;
+}
+
+.result-img {
+	display: none;
+}
+
+.img-section img {
+	width: 300px;
+	height:200px;
+}
+
+.share-btn-area {
+	margin-top: 15px;
+	/*border:1px solid #444;*/
+}
+
+.share-btn {
+	display: inline-block;
+	padding: 5px 12px;
+	color: #fff;
+	background-color: #00aced;
+	border-radius: 25px;
+	cursor: pointer;
+}
+
+.share-btn .fa {
+	margin-left: 10px;
+}
+
+/*ここまでモーダル*/
+
+/*ここからテーブル*/
+#board {
+	width: 230px;
+	margin: 0 auto; 
+}
+
+.table-can-click {
+	cursor: pointer;
+}
+
+.message {
+	color: #C9543A;
+	margin:10px 0;
+	border: 1px solid #444;
+	border-radius: 10px;
+	display: inline-block;
+	padding: 5px 10px;
+	text-align: center;
+}
+
+.btn {
+	margin:15px 0 30px;
+	border: 1px solid #444;
+	display: inline-block;
+	padding: 4px 20px;
+	border-radius: 10px;
+	letter-spacing: 1px;
+}
+
+.btn:hover {
+	background-color: #444;
+	color: #fff;
+}
+
+
+/*ここからフラグ設置ボタン*/
+.toggleFlag {
+	width: 230px;
+	margin: 0 auto;
+	padding-top:15px;
+}
+
+.toggleFlag label {
+	display: inline-block;
+}
+
+.toggleFlag label .check-input {
+	display: none;
+}
+
+.checkbox-parts {
+	font-size: 14px;
+    position: relative;
+    padding: 10px 20px 10px 53px;
+    transition: .3s;
+    color: #444;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.checkbox-parts:before { /*これが丸枠*/
+	content: "";
+    position: absolute;
+    top: 12px;
+    left: 9px;
+    width: 30px;
+    height: 14px;
+    border-radius: 15px;
+    border: 1px solid #aaa;
+    background: #fff;
+    display: block;
+}
+
+.check-input:checked + .checkbox-parts{
+  	background: #009250;
+    color: #fff;
+    border: 1px solid #009250;
+}
+
+.checkbox-parts:after { /*これが丸く動く奴*/
+	content: "";
+    display: block;
+    position: absolute;
+    top: 13.4px;
+    left: 11px;
+    width: 13px;
+    height: 13px;
+    background: #aaa;
+    border-radius: 50%;
+    transition: .2s;
+    display: block;
+}
+
+.check-input:checked + .checkbox-parts:after {
+	left: 26px;
+    background: #009250;
+}
+/*ここまでフラグ設置ボタン*/
+/*---ここまでmain----*/
+
+
+/*ここからフッター*/
+
+footer {
+	height: 130px;
+	margin-top: 50px;
+	/*background-color: #ddd;*/
+	position: relative;
+	color: #666;
+}
+
+footer .link-tree {
+	padding-top: 40px;
+}
+
+footer .link-tree ul {
+	padding-left:30px;
+}
+
+footer .link-tree ul:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+footer .link-tree li {
+	float: left;
+	padding-right: 20px;
+}
+
+footer .link-tree li:nth-of-type(odd){
+	padding-right: 13px;
+}
+
+footer .link-tree li a {
+	color: #999966;
+}
+
+footer .link-tree li a:hover {
+	color:#996600;
+}
+
+
+footer .link-tree {
+	padding: 20px 0;
+	text-align: center;
+}
+
+footer .copyright-box {
+	text-align:center;
+	position: static;
+	padding-top:20px;
+	border-top: 1px solid #ccc; 
+}
+
+footer .copyright {
+	font-size: 14px;
+}
+/*ここまでフッター
