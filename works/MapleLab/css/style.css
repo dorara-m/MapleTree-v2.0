@@ -1,0 +1,163 @@
+/*common*/
+* {
+	padding: 0;
+	margin: 0;
+}
+
+h1,h2,h3 {
+	margin: 0;
+	font-family: 'Abel', sans-serif;
+	font-weight: bold;
+}
+
+a,a:visited {
+	color: #369;
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+.clearfix {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.slow-toggle {
+	transition: all .7s ease;
+}
+
+/*ここまで*/
+
+/*header*/
+header {
+	padding: 15px;
+	text-align: center;
+}
+
+header h1 {
+	font-size: 50px;
+}
+
+/*about*/
+#about {
+	height: 250px;
+	text-align: center;
+	background-image: url(../images/cording.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#about .about-inner {
+	height: 250px;
+	background-color: rgba(0,0,0,0.3);
+	position: relative;
+	color: #fff;
+}
+
+#about .about-inner .about-text {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	width: 600px;
+	height: 150px;
+	margin: auto;
+}
+
+#about .about-inner .about-text h2 {
+	font-size: 28px;
+	margin-bottom: 15px;
+}
+
+#about .about-inner .about-text p {
+	margin-top: 7px;
+	font-size: 14px;
+	color: #ddd;
+}
+
+/*works*/
+#works {
+	padding:70px 20px 50px;
+}
+
+#works .row {
+	margin:0 auto;
+	width:1014px;
+}
+
+.card-bg {
+	float:left;
+	width:338px;
+	padding:0 15px;
+	margin-bottom: 30px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.card-item {
+	border: 1px solid #ddd;
+	height: 210px;
+	padding: 10px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	background-image: url(../images/icon.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.hero-head-img {
+	background-image: url(../images/MapleHero.png);
+}
+
+
+.card-item .card-title {
+	height: 190px;
+	background-color: rgba(0,0,0,0.9);
+	color: #fff;
+	display: none;
+}
+
+.card-title h3 {
+	font-size: 25px;
+	line-height: 190px;
+	text-align: center;
+}
+
+
+/*footer*/
+footer {
+	color: #666;
+	padding:10px 0 40px;
+	text-align: center;
+	background-color: #eee;
+}
+
+footer .logos {
+	margin: 20px auto;
+	display: table;
+	border-collapse: separate;
+	border-spacing: 20px 0;
+}
+
+footer .logos a {
+	display: table-cell;
+}
+
+footer .logos img {
+	width: 80px;
+	height:80px;
+}
+
+footer .copy-right {
+	margin-top: 10px;
+	font-size: 12px;
+}

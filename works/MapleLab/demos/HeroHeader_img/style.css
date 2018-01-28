@@ -1,0 +1,120 @@
+/*---common---*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h1,h2,h3 {
+	margin: 0;
+	font-family: 'Exo', sans-serif;
+	font-weight: bold;
+}
+
+a,a:visited {
+	color: #369;
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+/*---/common---*/
+
+body {
+	width: 100%;
+	height: 100%;
+}
+
+/*---<header>---*/
+header {
+	width: 100%;
+	height: 100vh;
+}
+
+header .wrapper {
+	height: 100%;
+	width: 100%;
+	background-image: url('bg.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+header .wrapper .black-filter {
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.5);
+}
+
+header .wrapper .site-title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -50px;
+	margin-left: -180px;
+	text-align: center;
+	color: white;
+}
+
+header .wrapper .site-title h1 {
+	font-size: 75px;
+}
+
+header .wrapper .site-title h2 {
+	font-size: 20px;
+}
+
+header .wrapper .down-arrow {
+	position: absolute;
+	left: 50%;
+	bottom: 10%;
+	color: white;
+	font-size: 25px;
+}
+
+/*---</header>---*/
+
+/*---<about>---*/
+#about {
+	padding:50px;
+	text-align: center;
+}
+
+#about h2 {
+	font-size: 28px;
+	margin-bottom: 10px;
+}
+
+#about p {
+	margin-top: 7px;
+}
+
+
+/*----<footer>---*/
+footer {
+	color: #666;
+	padding:10px 0 40px;
+	text-align: center;
+	background-color: #eee;
+}
+
+footer .logos {
+	margin: 20px auto;
+	display: table;
+	border-collapse: separate;
+	border-spacing: 20px 0;
+}
+
+footer .logos a {
+	display: table-cell;
+}
+
+footer .logos img {
+	width: 80px;
+	height:80px;
+}
+
+footer .copy-right {
+	margin-top: 10px;
+	font-size: 12px;
+}
