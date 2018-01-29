@@ -6,7 +6,7 @@
 
 h1,h2,h3 {
 	margin: 0;
-	font-family: 'Exo', sans-serif;
+	font-family: 'Ubuntu Condensed', sans-serif;
 	font-weight: bold;
 }
 
@@ -55,10 +55,23 @@ header {
 header .wrapper {
 	height: 100%;
 	width: 100%;
-	background-image: url('bg.jpg');
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+
+header .wrapper #mov {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 100%;
+	height: 100%;
+	background-color: #f7f7f7;
+	z-index: -1;
 }
 
 header .wrapper .black-filter {
@@ -67,22 +80,37 @@ header .wrapper .black-filter {
 	background-color: rgba(0,0,0,0.5);
 }
 
+/*title*/
 header .wrapper .site-title {
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin-top: -50px;
-	margin-left: -200px;
+	top: 20%;
+	left: 20%;
+	margin-top: -60px;
+	margin-left: -130px;
 	text-align: center;
 	color: white;
 }
 
 header .wrapper .site-title h1 {
-	font-size: 75px;
+	font-size: 90px;
 }
 
 header .wrapper .site-title h2 {
+	margin-top: 10px;
 	font-size: 20px;
+}
+
+/*isMute*/
+header .wrapper .sound {
+	position: absolute;
+	top: 30px;
+	right: 50px;
+	color: #fff;
+	font-size: 35px;
+}
+
+header .wrapper .sound #soundToggle {
+	cursor:pointer;
 }
 
 header .wrapper .down-arrow {

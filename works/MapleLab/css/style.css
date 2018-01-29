@@ -118,6 +118,9 @@ header h1 {
 	background-image: url(../images/MapleHero.png);
 }
 
+.hero-head-movie {
+	background-image: url(../images/MapleMovie.png);
+}
 
 .card-item .card-title {
 	height: 190px;
