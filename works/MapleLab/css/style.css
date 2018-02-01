@@ -41,6 +41,19 @@ header h1 {
 	font-size: 50px;
 }
 
+header .back-btn {
+	position: absolute;
+	top: 30px;
+	left: 25px;
+	font-size: 25px;
+}
+
+header .back-btn h2 {
+	display: inline-block;
+	font-size: 18px;
+}
+
+
 /*about*/
 #about {
 	height: 250px;
@@ -120,6 +133,14 @@ header h1 {
 
 .hero-head-movie {
 	background-image: url(../images/MapleMovie.png);
+}
+
+.menu-zoom {
+	background-image: url(../images/MapleMenu1.png);
+}
+
+.menu-slide {
+	background-image: url(../images/MapleMenu2.png);
 }
 
 .card-item .card-title {
