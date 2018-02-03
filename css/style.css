@@ -294,7 +294,7 @@ section {
 }
 
 .slide .slide-text a:hover {
-	color:#ff9430;
+	text-decoration: underline;
 }
 
 .slide .slide-text .btn-area {
