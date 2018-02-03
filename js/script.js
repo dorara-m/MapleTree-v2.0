@@ -1,5 +1,5 @@
 $(function(){
-	//ここからスクロール
+	//---ここからスクロール---
 	// ナビゲーションのリンクを指定
   var navLink = $('.scroll-nav-inner li a');
     // 各コンテンツのページ上部からの開始位置と終了位置を配列に格納しておく
@@ -45,7 +45,7 @@ $(function(){
     }, 300);
     return false;
  	});
-  // ここまでスクロール
+  // ----ここまでスクロール---
 
   //SNSボタンをクリックした時の挙動
   var shareButton = $('.share-links').children('.sns-item').children('a');

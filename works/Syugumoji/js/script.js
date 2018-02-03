@@ -17,6 +17,15 @@ $(function(){
 		$('textarea').val('');
 		$('#show').text('0');
 	});
+
+	// share
+	var shareButton = $('#share').children('.share-item').children('a');
+	  for (var i = 0; i < shareButton.length; i++) {
+      shareButton[i].addEventListener("click", function(e) {
+         e.preventDefault();
+         window.open(this.href, "SNS_window", "width=600, height=500, menubar=no, toolbar=no, scrollbars=yes");
+      }, false);
+	  }
 });
 
 // 入力前と入力後の値を比べるて変化があったら文字数を表示。

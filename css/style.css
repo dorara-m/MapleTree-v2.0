@@ -1,4 +1,4 @@
-/* common */
+/* ---common--- */
 * {
 	padding: 0;
 	margin: 0;
@@ -41,9 +41,9 @@ body {
 	transition: all .7s ease;
 }
 
-/*ここまで*/
+/*---/common----*/
 
-/*header*/
+/*---header---*/
 
 header {
 	height: 50px;
@@ -120,9 +120,9 @@ header .share-links {
 .sns .sns-item {
 	display: table-cell;
 }
-/*ここまでヘッダー*/
+/*---/header---*/
 
-/*section共通*/
+/*---section共通---*/
 section {
 	padding: 80px 50px 40px;
 	text-align: center;
@@ -138,18 +138,18 @@ section {
 	padding: 7px 12px;	
 }
 
-/*fv*/
+/*---fv---*/
 .first-view {
 	background-image: url(../images/sample-img.jpg);
 	background-position: center;
 	/*background-attachment: fixed;*/
 	background-size: cover;
 	background-repeat: no-repeat;
-	height:700px;
+	height:100vh;
 }
 
 .first-view-inner {
-	height: 700px;
+	height: 100%;
 	background-color: rgba(0,0,0,0.3);
 	position: relative;
 	color: #fff;
@@ -255,16 +255,17 @@ section {
   background-position: center;
 }
 
-.slide:nth-of-type(2) {
-	background-image: url(../images/soft-matter.jpg);
+.slide:nth-of-type(1) {
+	background-image: url(../images/sygumoji-noletter.png);
+	background-size:cover; 
 }
 
 .slide:nth-of-type(3) {
-	background-image: url(../images/dango64.png);
+	background-image: url(../images/soft-matter.jpg);
 }
 
 .slide:nth-of-type(4) {
-	background-image: url(../images/footer-logo-mini.png);
+	background-image: url(../images/dango64.png);
 }
 
 .active {
@@ -363,7 +364,7 @@ section {
 	margin-bottom: 3px;
 }
 
-/*works*/
+/*---works---*/
 .works {
 	background-color: #f7f7f7;
 }
@@ -408,6 +409,10 @@ section {
 }
 
 /* works-card-images */
+.syugumoji .card-img-box {
+	background-image:url(../images/sygumoji-big.png);
+}
+
 .father .card-img-box {
 	background-image: url(../images/soft-matter.jpg);
 }
