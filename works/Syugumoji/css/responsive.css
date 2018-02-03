@@ -1,0 +1,27 @@
+@media all and (max-width: 600px) {
+	main {
+		width: 100%;
+	}
+
+	header {
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	.count-show {
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	.form {
+		width: 80%;
+	}
+
+	.text {
+		font-size: 14px;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+		width: 100%;
+	}
+}
