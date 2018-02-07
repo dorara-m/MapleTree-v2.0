@@ -10,7 +10,8 @@ $(function(){
     // ページ内リンクでないナビゲーションが含まれている場合は除外する
     if(targetContents.charAt(0) == '#') {
       // ページ上部からコンテンツの開始位置までの距離を取得
-    	var targetContentsTop = $(targetContents).offset().top;
+      var headerHight = $('#header').height();
+    	var targetContentsTop = $(targetContents).offset().top - headerHight;
     	// ページ上部からコンテンツの終了位置までの距離を取得
      	var targetContentsBottom = targetContentsTop + $(targetContents).outerHeight(true) - 1;
        // 配列に格納

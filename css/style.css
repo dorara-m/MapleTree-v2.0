@@ -137,6 +137,7 @@ section {
 	display: table-cell;
 	padding: 7px 12px;	
 }
+/*---/section共通---*/
 
 /*---fv---*/
 .first-view {
@@ -183,13 +184,15 @@ section {
 	bottom: 10px;
 	color: #fff;
 }
+/*----/fv----*/
 
-/*info*/
+
+/*----info----*/
 .info {
 	height: 500px;
 }
 
-/*news*/
+/*----news----*/
 .info .news {
 	width: 60%;
 	height: 500px;
@@ -255,17 +258,17 @@ section {
   background-position: center;
 }
 
-.slide:nth-of-type(1) {
+.slide.lab {
+	background-image: url(../images/lab.jpg);
+}
+
+.slide.syugumoji {
 	background-image: url(../images/sygumoji-noletter.png);
 	background-size:cover; 
 }
 
-.slide:nth-of-type(3) {
+.slide.father {
 	background-image: url(../images/soft-matter.jpg);
-}
-
-.slide:nth-of-type(4) {
-	background-image: url(../images/dango64.png);
 }
 
 .active {
@@ -327,8 +330,9 @@ section {
   color: #fff;
   background-color: #5cabd0;
 }
+/*----/news----*/
 
-/*about*/
+/*----about----*/
 .info .about {
 	width: 40%;
 	height: 500px;
@@ -363,6 +367,8 @@ section {
 	border-bottom:1px solid #ddd;
 	margin-bottom: 3px;
 }
+/*---/about---*/
+/*----/info----*/
 
 /*---works---*/
 .works {
@@ -408,7 +414,11 @@ section {
 	background-repeat: no-repeat;
 }
 
-/* works-card-images */
+/*---- works-card-images ----*/
+.lab .card-img-box {
+	background-image: url(../images/lab.jpg);
+}
+
 .syugumoji .card-img-box {
 	background-image:url(../images/sygumoji-big.png);
 }
@@ -463,8 +473,9 @@ section {
 .dango64 .card-text-box h3 {
 	font-family: serif;
 }
+/*---/works---*/
 
-/*contact*/
+/*---contact---*/
 .contact {
 }
 
@@ -487,14 +498,13 @@ section {
 	border-spacing: 40px 0;
 }
 
-
-
 .contact .btn {
 	background-color: #369;
 	color: #fff;
 }
+/*---/contact---*/
 
-/*footer*/
+/*---footer---*/
 footer {
 	color: #fff;
 	padding:50px;
