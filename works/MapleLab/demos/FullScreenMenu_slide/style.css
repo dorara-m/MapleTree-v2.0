@@ -55,16 +55,16 @@ header {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	margin-top: -80px;
-	margin-left: -175px;
+	-webkit-transform: translate(-50%, -50%);
+	   -moz-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	     -o-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	text-align: center;
 }
 
 .site-title h1 {
 	font-size: 65px;
-}
-
-.site-title h2 {
-	text-align: center;
 }
 
 /*---menu---*/
@@ -124,8 +124,11 @@ header {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	margin-top: -180px;
-	margin-left: -75px;
+	-webkit-transform: translate(-50%, -50%);
+	   -moz-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	     -o-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 }
 
 .menu-panel nav li {

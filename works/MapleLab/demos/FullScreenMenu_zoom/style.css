@@ -55,11 +55,15 @@ header {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	margin-top: -80px;
-	margin-left: -175px;
+	-webkit-transform: translate(-50%, -50%);
+	   -moz-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	     -o-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 }
 
 .site-title h1 {
+	text-align: center;
 	font-size: 65px;
 }
 
@@ -91,22 +95,6 @@ header {
 /*---アニメーション部分---*/
 .menu-panel.is-visible {
 	visibility: visible;
-}
-
-.panel-slide-left .panel-inner {
-	-webkit-transform: translateX(-100%);
-	   -moz-transform: translateX(-100%);
-	    -ms-transform: translateX(-100%);
-	     -o-transform: translateX(-100%);
-	        transform: translateX(-100%);
-}
-
-.panel-slide-left.is-visible .panel-inner {
-	-webkit-transform: translateX(0%);
-	   -moz-transform: translateX(0%);
-	    -ms-transform: translateX(0%);
-	     -o-transform: translateX(0%);
-	        transform: translateX(0%);
 }
 
 .panel-zoom-in .panel-inner {
@@ -142,8 +130,11 @@ header {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	margin-top: -180px;
-	margin-left: -75px;
+	-webkit-transform: translate(-50%, -50%);
+	   -moz-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	     -o-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 }
 
 .menu-panel nav li {

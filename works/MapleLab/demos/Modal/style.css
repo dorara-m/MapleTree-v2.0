@@ -1,0 +1,202 @@
+/*---common---*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h1,h2,h3 {
+	margin: 0;
+	font-weight: normal;
+}
+
+a,a:visited {
+	color: #369;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+li {
+	list-style: none;
+}
+
+.btn-area {
+	display: table;
+	margin: 20px auto;
+}
+
+.btn-area a {
+	display: table-cell;
+	padding: 7px 12px;
+	background-color: #369;
+	color: #fff;
+}
+/*---/common---*/
+
+/*---main---*/
+.main {
+	font-family: 'Nanum Pen Script', cursive;
+	text-align: center;
+	color: #c89b35;
+}
+
+.btn {
+	display: inline-block;
+	cursor: pointer;
+}
+
+.btn:hover {
+	opacity: 0.8;
+}
+
+/*---modal---*/
+.modal-wrapper {
+	z-index: 2;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	visibility: hidden;
+}
+
+.modal-wrapper.is-visible {
+	visibility: visible;
+}
+
+/*メニュー起動時にスクロールを制限する*/
+body.is-locked {
+	overflow: hidden;
+}
+
+.modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	   -moz-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	     -o-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	width: 400px;
+	height: 300px;
+	padding: 10px;
+	background-color: #e8ffff;
+	-webkit-transition: all .2s ease-in-out 0s;
+	   -moz-transition: all .2s ease-in-out 0s;
+	    -ms-transition: all .2s ease-in-out 0s;
+	     -o-transition: all .2s ease-in-out 0s;
+	        transition: all .2s ease-in-out 0s;
+}
+
+.modal-wrapper .modal {
+	opacity: 0;
+}
+
+.modal-wrapper.is-visible .modal {
+	opacity: 1.0;
+}
+
+.close-btn {
+	font-size: 35px;
+	position: absolute;
+	right: 20px;
+}
+
+.modal-title {
+	font-size: 60px;
+}
+
+.modal-img {
+	width: 90px;
+	height: 90px;
+}
+
+.ok-btn {
+	margin-top: 20px;
+	padding:0 16px;
+	border-radius: 50%;
+	font-size: 30px;
+	background-color: #c89b35;
+	color: #fff;
+}
+
+/*---/modal---*/
+
+/*---header---*/
+.header {
+	padding: 10px;
+	background-color: #fdecee;
+	text-align: center;
+}
+
+.header-page-title {
+	font-size: 80px;
+}
+/*---/header----*/
+
+.present {
+	height: 400px;
+	padding: 50px 0;
+	background-color: #fffdf2;
+	font-size: 30px;
+	color: #c89b35;
+}
+
+.present-open {
+	margin-top: 20px;
+	font-size: 60px;
+	cursor: pointer;
+}
+
+/*---/main---*/
+
+/*---about---*/
+.about {
+	padding:50px;
+	border-top: 1px solid #ddd;
+	text-align: center;
+}
+
+.about .section-title {
+	font-size: 28px;
+	margin-bottom: 10px;
+}
+
+.about p {
+	margin-top: 7px;
+}
+/*---/about---*/
+
+/*---footer---*/
+.footer {
+	color: #666;
+	padding:10px 0 40px;
+	text-align: center;
+	background-color: #eee;
+}
+
+.footer .logos {
+	margin: 20px auto;
+	display: table;
+	border-collapse: separate;
+	border-spacing: 20px 0;
+}
+
+.footer .logos a {
+	display: table-cell;
+}
+
+.footer .logos img {
+	width: 80px;
+	height:80px;
+}
+
+.footer .copy-right {
+	margin-top: 10px;
+	font-size: 12px;
+}
+/*---/footer---*/

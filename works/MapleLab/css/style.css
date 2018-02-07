@@ -143,6 +143,10 @@ header .back-btn h2 {
 	background-image: url(../images/MapleMenu2.png);
 }
 
+.modal {
+	background-image: url(../images/MapleModal.png);
+}
+
 .card-item .card-title {
 	height: 190px;
 	background-color: rgba(0,0,0,0.9);
