@@ -139,8 +139,9 @@ body.is-locked {
 /*---/header----*/
 
 .present {
-	height: 400px;
-	padding: 50px 0;
+	position: relative;
+	height: 350px;
+	padding: 50px;
 	background-color: #fffdf2;
 	font-size: 30px;
 	color: #c89b35;
@@ -150,6 +151,12 @@ body.is-locked {
 	margin-top: 20px;
 	font-size: 60px;
 	cursor: pointer;
+}
+
+.comment {
+	position: absolute;
+	bottom: 30px;
+	right: 30px;
 }
 
 /*---/main---*/
