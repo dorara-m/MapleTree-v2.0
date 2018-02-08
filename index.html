@@ -31,19 +31,21 @@
 	<!-- googlefonts -->
 	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/earlyaccess/kokoro.css" rel="stylesheet" />
+
 	<!-- css -->
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/responsive.css">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/font-icon.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/font-icon.css">
+	<link rel="stylesheet" href="css/darktooltip.css">
 </head>
 <body>
 	<!-- header -->
-	<header id="header">
+	<header class="header">
 		<nav class="scroll-nav">
 			<ul class="scroll-nav-inner">
-				<li><a href="#top" class="scroll-btn current" title="">
+				<li><a href="#top" class="scroll-btn current">
 					<h2>Top</h2>
 					<div class="is-menu-active"></div>
 				</a></li>
@@ -61,17 +63,14 @@
 				</a></li>
 			</ul>
 		</nav>
-		<ul class="sns share-links">
-			<li class="sns-item tip">
-				<p>Share →</p>
-			</li>
-			<li class="sns-item">
+		<ul class="share-links" id="sharer" data-tooltip="Please share!">
+			<li class="share-item">
 				<a href="https://twitter.com/share?url=http://maple-tree.moo.jp/&text=メープルもみじ、堂寺志門のホームページ。" title="" target="_blank"><span class="fa fa-twitter"></span></a>
 			</li>
-			<li class="sns-item">
+			<li class="share-item">
 				<a href="https://www.facebook.com/sharer/sharer.php?u=http://maple-tree.moo.jp/" title="" target="_blank"><span class="fa fa-facebook"></span></a>
 			</li>
-			<li class="sns-item sns-img">
+			<li class="share-item hatebu">
 				<a href="http://b.hatena.ne.jp/entry/http://maple-tree.moo.jp/" class="hatena-bookmark-button" data-hatena-bookmark-layout="touch" title="このエントリーをはてなブックマークに追加"><span class="icon-hatebu-icon"></span></a>
 			</li>
 		</ul>
@@ -84,7 +83,7 @@
 				<h3>Shimon Dotera's SITE</h3>
 			</div>
 
-			<div class="scroll-nav">
+			<div class="down-arrow">
 				<p>Scroll Down</p>
 				<span class="fa fa-arrow-down"></span>
 			</div>
@@ -103,7 +102,7 @@
 
 	        <li class="slide lab active">
 						<div class="slide-text">
-							<h3><a href="works/MapleLab/index.html">Web design porfolio</a></h3>
+							<h3><a href="works/MapleLab/index.html">Web design portfolio</a></h3>
 							<time datetime="2018-2-8">2018. 2. 8</time>
 							<p>デザイン専門のポートフォリオを作りました。<br>今後も様々なデザインパターンを実装、公開していく予定です。</p>
 						</div>
@@ -264,34 +263,32 @@
 	</section>
 
 	<section class="contact" id="contact">
-		<div class="contact-inner">
-			<h2 class="section-title">Contact</h2>
-			<p>お問い合わせ、ご連絡は以下のSNSまたはメールでお願いします。</p>
-			<p>また、GitHubではソースコードを、Twitterやブログではより親しみやすくパーソナルな情報を公開しています。</p>
-			<p>Web制作のご依頼、ご相談もお待ちしています。</p>
-			<ul class="sns">
-				<li class="sns-item">
-					<a href="https://twitter.com/robibon1" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-				</li>
-				<li class="sns-item">
-					<a href="https://www.facebook.com/profile.php?id=100021757482279" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-				</li>
-				<li class="sns-item">
-					<a href="mailto:satosinisemono@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-				</li>
-				<li class="sns-item">
-					<a href="https://github.com/maple-momiji" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-				</li>
-				<li class="sns-item">
-					<a href="http://momijitan.hatenablog.com/" target="_blank"><i class="fa fa-rss-square" aria-hidden="true"></i></a>
-				</li>
-			</ul>
-			<p>or</p>
-			<div class="btn-area">
-				<a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLScLTQThjcdOQAnLd9zCtz7fGLrRQU_UU89lyre1Jz54nEKJWg/viewform">Form</a>
-			</div>
-			<small>※当サイトではGoogleフォームを利用しています。</small>
+		<h2 class="section-title">Contact</h2>
+		<p>お問い合わせ、ご連絡は以下のSNSまたはメールでお願いします。</p>
+		<p>また、GitHubではソースコードを、Twitterやブログではより親しみやすくパーソナルな情報を公開しています。</p>
+		<p>Web制作のご依頼、ご相談もお待ちしています。</p>
+		<ul class="sns">
+			<li class="sns-item">
+				<a href="https://twitter.com/robibon1" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+			</li>
+			<li class="sns-item">
+				<a href="https://www.facebook.com/profile.php?id=100021757482279" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+			</li>
+			<li class="sns-item">
+				<a href="mailto:satosinisemono@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+			</li>
+			<li class="sns-item">
+				<a href="https://github.com/maple-momiji" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+			</li>
+			<li class="sns-item">
+				<a href="http://momijitan.hatenablog.com/" target="_blank"><i class="fa fa-rss-square" aria-hidden="true"></i></a>
+			</li>
+		</ul>
+		<p>or</p>
+		<div class="form-btn-wrapper">
+			<a class="form-btn" href="https://docs.google.com/forms/d/e/1FAIpQLScLTQThjcdOQAnLd9zCtz7fGLrRQU_UU89lyre1Jz54nEKJWg/viewform">Form</a>
 		</div>
+		<small>※当サイトではGoogleフォームを利用しています。</small>
 	</section>
 
 	<footer>
@@ -301,6 +298,7 @@
 
 	<!-- script -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/jquery.darktooltip.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>

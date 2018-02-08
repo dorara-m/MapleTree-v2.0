@@ -1,27 +1,12 @@
 /*タブレット*/
 @media all and (max-width: 960px) {
 	/*header*/
-	header .scroll-nav-inner {
+	.header .scroll-nav-inner {
 		border-spacing: 30px 0;
 	}
 
-	header .share-links {
-		top: 10px;
-		right: 5px;
-	}
-
-	.share-links .sns-item {
-		margin-right: 10px;
-		font-size: 20px;
-	}
-
-	.share-links .sns-img {
+	.share-item {
 		font-size: 23px;
-		margin-top: 0px;
-	}
-
-	.share-links .tip {
-		font-size: 11.5px;
 	}
 
 	/*Info*/
@@ -50,12 +35,12 @@
 	}
 
 	/*header*/
-	header {
+	.header {
 		height: 100px;
 		text-align: center;
 	}
 
-	header .scroll-nav {
+	.header .scroll-nav {
 		position: relative;
 		top: 0;
 		left: 0;
@@ -64,25 +49,18 @@
 	}
 
 
-	header .scroll-nav-inner {
+	.header .scroll-nav-inner {
 		border-spacing: 20px 0;
 	}
 
-	header .share-links {
-		top: 55px;
+	.share-item {
+		font-size: 20px;
 	}
 
 	/*first-view*/
-	.first-view-inner .site-title {
-		width: 320px;
-	}
 
 	.first-view-inner .site-title h1 {
 		font-size: 68px;
-	}
-
-	.first-view-inner .scroll-nav {
-		left: 42%;
 	}
 
 	section {

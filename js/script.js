@@ -48,6 +48,13 @@ $(function(){
  	});
   // ----ここまでスクロール---
 
+  // ---share---
+
+  // tooltip
+  $('#sharer').darkTooltip({
+    gravity:'north'
+  });
+
   //SNSボタンをクリックした時の挙動
   var shareButton = $('.share-links').children('.sns-item').children('a');
 	  for (var i = 0; i < shareButton.length; i++) {
